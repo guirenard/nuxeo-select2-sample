@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-Vendor: Nuxeo
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Version: 0.0.0.SNAPSHOT
+Bundle-Name: Nuxeo Select2 Sample
+Bundle-ManfestVersion: 2
+Bundle-SymbolicName: nuxeo-select2-sample
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Nuxeo-Component: OSGI-INF/layouts-contrib.xml,
+ OSGI-INF/theme-contrib.xml

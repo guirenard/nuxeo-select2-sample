@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<nxthemes:composition xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:nxthemes="http://nuxeo.org/nxthemes"
+  xmlns:nxu="http://nuxeo.org/nxweb/util"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:a4j="http://richfaces.org/a4j"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:c="http://java.sun.com/jstl/core"
+  xmlns:nxh="http://nuxeo.org/nxweb/html"
+  xmlns:nxl="http://nuxeo.org/nxforms/layout"
+  xmlns:nxd="http://nuxeo.org/nxweb/document">
+
+<ui:define name="body">
+
+  <h:form id="mySelect2SampleForm">
+    <h:message styleClass="errorMessage" for="mySelect2SampleForm"
+      id="mySelect2SampleForm_message" />
+
+    <a4j:region id="documentViewRegion">
+      <a4j:outputPanel id="documentViewPanel" layout="block">
+        <nxl:documentLayout documentMode="summary" mode="view"
+          value="#{select2SampleBean.doc}" />
+      </a4j:outputPanel>
+    </a4j:region>
+
+    </h:form>
+
+</ui:define>
+
+</nxthemes:composition>
