@@ -2,8 +2,7 @@
 
 <component name="org.nuxeo.sample.select2.types" version="1.0.0">
 
-  <require>org.nuxeo.ecm.core.schema.TypeService</require>
-  <require>org.nuxeo.ecm.core.CoreExtensions</require>
+  <require>org.nuxeo.ecm.platform.picture.jsf.types</require>
 
   <extension target="org.nuxeo.ecm.core.schema.TypeService" point="schema">
     <schema name="album" prefix="album" src="data/schemas/album.xsd" />
