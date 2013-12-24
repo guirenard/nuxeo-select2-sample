@@ -27,7 +27,6 @@ import org.nuxeo.ecm.core.api.ClientException;
 import org.nuxeo.ecm.core.api.CoreSession;
 import org.nuxeo.ecm.core.api.DocumentModel;
 import org.nuxeo.ecm.core.api.IdRef;
-import org.nuxeo.ecm.core.api.PathRef;
 import org.nuxeo.ecm.platform.ui.web.api.NavigationContext;
 
 /**
@@ -63,26 +62,6 @@ public class Select2SampleBean {
             }
         }
         return doc;
-    }
-
-    public void setDoc(DocumentModel doc) {
-        this.doc = doc;
-    }
-
-    public String getDocId() {
-        return docId;
-    }
-
-    public void setDocId(String docId) {
-        this.docId = docId;
-        if (docId != null) {
-            PathRef ref = new PathRef(docId);
-            try {
-                doc = documentManager.getDocument(ref);
-            } catch (ClientException e) {
-                log.error("Could not find document: " + docId);
-            }
-        }
     }
 
 }
